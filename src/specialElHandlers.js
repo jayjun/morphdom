@@ -104,6 +104,9 @@ export default {
                 }
             }
 
+            if (selectedIndex === -1 && i > 0) {
+                selectedIndex = 0;
+            }
             fromEl.selectedIndex = selectedIndex;
         }
     }
